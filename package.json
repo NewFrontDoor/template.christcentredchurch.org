@@ -1,0 +1,103 @@
+{
+  "name": "christcentred",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.12",
+    "@newfrontdoor/audio-player": "0.1.3",
+    "@newfrontdoor/search": "0.2.0",
+    "@newfrontdoor/sermon": "0.2.13",
+    "@react-google-maps/api": "^1.5.1",
+    "@react-hook/window-scroll": "^1.0.0",
+    "@sanity/block-content-to-react": "^2.0.6",
+    "@sanity/client": "0.142.6",
+    "@sanity/image-url": "^0.140.12",
+    "emotion-theming": "^10.0.10",
+    "flexsearch": "^0.6.30",
+    "mineral-ui": "^0.58.0",
+    "normalize.css": "^8.0.1",
+    "polished": "^3.4.1",
+    "query-string": "^6.7.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hamburger-menu": "^1.1.1",
+    "react-lunr": "^0.6.0",
+    "react-router-dom": "^5.0.1",
+    "react-router-hash-link": "^1.2.1",
+    "react-spring": "^8.0.27",
+    "typeface-noto-serif": "0.0.72",
+    "typeface-rubik": "^0.0.72"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "6.5.1",
+    "eslint-config-xo-react": "0.20.0",
+    "eslint-plugin-emotion": "^10.0.7",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "2.1.2",
+    "prettier": "^1.18.2",
+    "prop-types": "^15.7.2",
+    "react-scripts": "^3.0.1",
+    "xo": "0.25.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "now-build": "react-scripts build",
+    "now-dev": "react-scripts start"
+  },
+  "xo": {
+    "extends": [
+      "xo-react"
+    ],
+    "parser": "babel-eslint",
+    "prettier": true,
+    "space": true,
+    "plugins": [
+      "emotion"
+    ],
+    "rules": {
+      "emotion/jsx-import": "error",
+      "emotion/no-vanilla": "error",
+      "emotion/import-from-emotion": "error",
+      "emotion/styled-import": "error"
+    },
+    "overrides": [
+      {
+        "files": "**/__tests__/**/*.js",
+        "rules": {
+          "import/no-unassigned-import": [
+            "error",
+            {
+              "allow": [
+                "jest-dom/extend-expect"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "eslint": {
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
